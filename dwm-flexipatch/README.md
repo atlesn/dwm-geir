@@ -1,21 +1,22 @@
-# dwm-geir 6.2
+# dwm-geir 6.4 (based on dwm-flexipatch)
 
 Patches included:
 
 * attachbelow
 * autostart
 * centeredmaster
+* centerpatch
 * gaplessgrid
 * layoutmenu
+* noborder
+* no_transparent_borders
 * pertag
-* resetnmaster
 * rotatestack
-* ru_gaps
 * status2d
 * statuspadding
 * swallow
-* switchtotag
-* titlecolor
+* switchtag
+* vanity_gaps
 
 This version of dwm uses the following two fonts:
 
@@ -36,27 +37,13 @@ To get a layouts menu when rightclicking the layouts-icon, please install xmenu:
 
 ## Installation
 
-Clone this repo and compile from source:
+Clone dwm-flexipatch:
 
-	$ git clone https://github.com/geirda/dwm-geir.git
-	$ cd dwm-geir
+	$ git clone https://github.com/bakkeby/dwm-flexipatch.git
+
+Download config.h, config.mk, dwm.1 and patches.h from here and put them in the dwm-flexipatch folder
+
 	$ sudo make clean install
-
-## OpenBSD:
-
-	$ git clone https://github.com/geirda/dwm-geir.git
-	$ cd dwm-geir
-	$ git checkout openbsd
-	$ doas make clean install
-
-## For Arch users:
-
-Download the file PKGBUILD, create and install the package:
-
-	$ wget https://raw.githubusercontent.com/geirda/dwm-geir/main/PKGBUILD
-	$ makepkg -ci
-
-Precompiled packages for Arch: https://github.com/geirda/Arch/tree/master/suckless/dwm/
 
 
 ![suckless](https://raw.githubusercontent.com/geirda/Arch/master/suckless/suckless.png)
